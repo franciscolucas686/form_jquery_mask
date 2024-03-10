@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
     <title>Formulário</title>
 </head>
 <body>
     <div class="container">
         <div class="img">
-            <img src="" alt="">
+            <img src="img/shopping.svg" alt="Pessoa analisando outras pessoas numa tela">
         </div>
         <div class="form">
+            <h1>Cadastre-se</h1>
             <form>
                 <label for="nome">Nome completo</label>
                 <input id="nome" type="text">
@@ -26,10 +30,12 @@
                 <input id="cpf" type="number">
 
                 <label for="endereco">Endereço completo</label>
-                <input id="endereco" type="text">
+                <textarea id="endereco" rows="3" ></textarea>
 
                 <label for="cep">CEP</label>
                 <input id="cep" type="number">
+
+                <button type="submit">Cadastrar</button>
             </form>
         </div>
     </div>
