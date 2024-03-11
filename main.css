@@ -7,6 +7,7 @@
 
 html {
     background-color: #ada8f8;
+    overflow-x: hidden;
 }
 
 .container {
@@ -21,9 +22,11 @@ html {
 .img {
     background-color: #fdba9b;
     display: flex;
-    height: 700px;
+    height: 550px;
+    width: 550px;
     align-items: center;
     box-shadow: 5px 4px 20px 1px rgba(0, 0, 0, 0.151);
+    border-radius: 5px 0px 0px 5px;
 }
 
 .img img {
@@ -32,15 +35,15 @@ html {
 }
 
 .form {
-
     display: flex;
     flex-direction: column;
-    width: 450px;
-    height: 700px;
+    width: 550px;
+    height: 550px;
     padding: 0px 50px;
     background-color: #FDFFFC;
     box-shadow: 8px 4px 20px 1px rgba(0, 0, 0, 0.151);
     padding-top: 30px;
+    border-radius: 0px 5px 5px 0px;
 }
 
 .form h1 {
@@ -52,9 +55,8 @@ html {
     flex-direction: column;
 }
 
-.form input {
+.form input, .form textarea {
     padding-left: 10px;
-    height: 35px;
     border-radius: 5px;
     border: none;
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.233);
@@ -63,20 +65,23 @@ html {
     font-size: 15px;
 }
 
-.form label {
-    font-size: 18px;
+.form input {
+    height: 30px;
 }
 
 .form form textarea {
     resize: none;
-    padding-left: 10px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.233);
-    margin-bottom: 10px;
-    outline: none;
     padding-top: 5px;
-    font-size: 15px;
+}
+
+.form label {
+    font-size: 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 #telefone {
@@ -89,8 +94,8 @@ html {
 
 .form button {
     margin-top: 15px;
-    height: 60px;
-    font-size: 25px;
+    height: 40px;
+    font-size: 20px;
     border: none;
     background-color: #574EC9;
     border-radius: 5px;
