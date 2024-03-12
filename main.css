@@ -19,7 +19,8 @@ html {
 
 }
 
-.img, .form {
+.img,
+.form {
     height: 550px;
     width: 550px;
 }
@@ -56,7 +57,8 @@ html {
     flex-direction: column;
 }
 
-.form input, .form textarea {
+.form input,
+.form textarea {
     padding-left: 10px;
     border-radius: 5px;
     border: none;
@@ -85,11 +87,9 @@ html {
     margin-top: 10px;
 }
 
-#telefone {
-    width: 150px;
-}
-
-#cpf {
+#telefone,
+#cpf,
+#cep {
     width: 150px;
 }
 
@@ -102,9 +102,14 @@ html {
     border-radius: 5px;
     color: #FDFFFC;
     transition: all ease .5s;
+    outline: none;
 }
 
 .form button:hover {
+    background-color: #96E2D9;
+}
+
+.form button:focus {
     background-color: #96E2D9;
 }
 
